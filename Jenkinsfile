@@ -22,7 +22,7 @@ pipeline{
             }
             steps{
                 bat 'echo ${DOCKER_HUB_PSW} | docker login -u ${DOCKER_HUB_USR} --password-stdin'
-                bat 'docker push gkhnsit/selenium:latest'
+                bat 'docker push gkhnsit/selenium'
                 //bat "docker tag gkhnsit/selenium:latest gkhnsit/selenium:${env.BUILD_NUMBER}"
                 bat "docker push gkhnsit/selenium:${env.BUILD_NUMBER}"
             }
