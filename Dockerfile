@@ -14,4 +14,4 @@ ADD runner.sh runner.sh
 RUN dos2unix runner.sh
 
 # Start the runner.sh
-ENTRYPOINT sh runner.sh
+ENTRYPOINT bat runner.sh
